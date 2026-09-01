@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Archie",
+      "hasCanvas": false,
+      "bodyTextLen": 734,
+      "bodyTextHash": "7d8a28ddabaaf1f7fb60dcdf04973ca0261e977259a4c0082b66ca428a450aff",
+      "bodyTextPrefix": "Archie Сегодня 31 авг. Арчи Мишлинг · 12 лет 3 месяца Стабилен 9",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Archie",
+      "hasCanvas": false,
+      "bodyTextLen": 734,
+      "bodyTextHash": "7d8a28ddabaaf1f7fb60dcdf04973ca0261e977259a4c0082b66ca428a450aff",
+      "bodyTextPrefix": "Archie Сегодня 31 авг. Арчи Мишлинг · 12 лет 3 месяца Стабилен 9",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @font-face {
+        font-family: "Fraunces";
+        src: url("fonts/Fraunces.ttf") format("truetype");
+        font-weight: 100 900;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "Figtree";
+        src: url("fonts/Figtree.ttf") format("truetype");
+        font-weight: 300 900;
+        font-style: normal;
+        font-display: block;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body {
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+        background: #F3EDE4;
+      }
+      .card {
+        position: relative;
+        width: 1200px;
+        height: 630px;
+        background: #F3EDE4;
+        font-synthesis: none;
+        -webkit-font-smoothing: antialiased;
+      }
+      .photo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 740px;
+        height: 630px;
+        overflow: hidden;
+      }
+      .photo img {
+        width: 112%;
+        height: 118%;
+        object-fit: cover;
+        object-position: 28% 10%;
+        filter: saturate(1.04) contrast(1.04);
+      }
+      .fade {
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 280px;
+        background: linear-gradient(
+          90deg,
+          #F3EDE4 0%,
+          rgba(243, 237, 228, 0.92) 28%,
+          rgba(243, 237, 228, 0.45) 62%,
+          rgba(243, 237, 228, 0) 100%
+        );
+      }
+      .vignette {
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(180deg, rgba(28, 25, 23, 0.06) 0%, transparent 22%),
+          linear-gradient(0deg, rgba(28, 25, 23, 0.14) 0%, transparent 28%),
+          linear-gradient(90deg, transparent 70%, rgba(28, 25, 23, 0.10) 100%);
+        pointer-events: none;
+      }
+      .panel {
+        position: relative;
+        z-index: 2;
+        width: 560px;
+        height: 630px;
+        padding: 0 80px 0 88px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .kicker {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-family: "Figtree", "DejaVu Sans", sans-serif;
+        font-weight: 600;
+        font-size: 17px;
+        letter-spacing: 0.02em;
+        color: #3F5C4A;
+        line-height: 1.35;
+        max-width: 380px;
+        margin-bottom: 18px;
+      }
+      .kicker .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #C4A574;
+        flex-shrink: 0;
+      }
+      h1 {
+        font-family: "Fraunces", "Liberation Serif", serif;
+        font-weight: 600;
+        font-variation-settings: "opsz" 144, "SOFT" 0, "WONK" 0, "wght" 600;
+        font-size: 108px;
+        line-height: 0.9;
+        color: #3F5C4A;
+        letter-spacing: -0.03em;
+      }
+      .rule {
+        width: 56px;
+        height: 3px;
+        background: #C4A574;
+        margin: 22px 0 0;
+        border-radius: 2px;
+      }
+      .frame {
+        position: absolute;
+        inset: 22px;
+        border: 1.5px solid rgba(63, 92, 74, 0.28);
+        border-radius: 2px;
+        pointer-events: none;
+        z-index: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="photo">
+        <img src="archie-portrait.jpg" alt="" />
+        <div class="fade"></div>
+        <div class="vignette"></div>
+      </div>
+      <div class="panel">
+        <div class="kicker"><span class="dot"></span> «Дневник здоровья Арчибальда»</div>
+        <h1>Archie</h1>
+        <div class="rule"></div>
+      </div>
+      <div class="frame"></div>
+    </div>
+  </body>
+</html>
